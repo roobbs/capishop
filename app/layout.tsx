@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./ui/globals.css";
 import { inter, geistMono, geistSans } from "./ui/fonts";
+import Header from "./components/Header";
 
 export const metadata: Metadata = {
   title: "CapiShop",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
